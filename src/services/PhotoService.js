@@ -11,7 +11,7 @@ const apiClient = axios.create({
 export default {
   getPhotos({ page, perPage, orderBy }) {
     return apiClient.get(
-      `/collections/17098/photos?client_id=${API_KEY}&page=${page}&per_page=${perPage}&order_by=${orderBy}`
+      `/photos?client_id=${API_KEY}&page=${page}&per_page=${perPage}&order_by=${orderBy}`
     )
   }
 }
